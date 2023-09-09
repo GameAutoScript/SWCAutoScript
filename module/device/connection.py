@@ -831,7 +831,7 @@ class Connection(ConnectionAttr):
         packages = re.findall(r'package:([^\s]+)', output)
         return packages
 
-    def list_azurlane_packages(self, keywords=('hkrpg', ), show_log=True):
+    def list_azurlane_packages(self, keywords=('chronicles', ), show_log=True):
         """
         Args:
             keywords:
@@ -844,7 +844,7 @@ class Connection(ConnectionAttr):
         packages = [p for p in packages if any([k in p.lower() for k in keywords])]
         return packages
 
-    def detect_package(self, keywords=('hkrpg', ), set_config=True):
+    def detect_package(self, keywords=('chronicles', ), set_config=True):
         """
         Show all possible packages with the given keyword on this device.
         """

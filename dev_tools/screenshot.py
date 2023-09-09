@@ -65,7 +65,7 @@ else:
     config = AzurLaneConfig('template')
     config.override(
         Emulator_Serial=name,
-        Emulator_PackageName='com.miHoYo.hkrpg',
+        Emulator_PackageName='com.com2us.chronicles.android.google.us.normal',
         ScreenshotMethod='ADB_nc',
     )
     device = Device(config)
