@@ -6,11 +6,10 @@ server = 'cn'  # Setting default to cn, will avoid errors when using dev_tools
 
 VALID_SERVER = ['cn', ]
 VALID_PACKAGE = {
-    'com.miHoYo.hkrpg': 'cn',
-    'com.HoYoverse.hkrpgoversea': 'oversea'
+    'com.com2us.chronicles.android.google.us.normal': 'cn'
 }
 VALID_CHANNEL_PACKAGE = {
-    'com.miHoYo.hkrpg.bilibili': ('cn', 'Bilibili'),
+    # 'com.miHoYo.hkrpg.bilibili': ('cn', 'Bilibili'),
 }
 
 
