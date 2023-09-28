@@ -79,7 +79,6 @@
       "Defeat_a_total_of_20_enemies": "not_supported",
       "Enter_combat_by_attacking_enemy_Weakness_and_win_3_times": "not_supported",
       "Use_Technique_2_times": "achievable",
-      "Go_on_assignment_1_time": "not_set",
       "Take_1_photo": "achievable",
       "Destroy_3_destructible_objects": "not_supported",
       "Complete_Forgotten_Hall_1_time": "not_supported",
@@ -110,22 +109,6 @@
     "BattlePassStorage": {
       "BattlePassLevel": {},
       "BattlePassTodayQuest": {}
-    }
-  },
-  "Assignment": {
-    "Scheduler": {
-      "Enable": false,
-      "NextRun": "2020-01-01 00:00:00",
-      "Command": "Assignment",
-      "ServerUpdate": "04:00"
-    },
-    "Assignment": {
-      "Name_1": "Nameless_Land_Nameless_People",
-      "Name_2": "Akashic_Records",
-      "Name_3": "The_Invisible_Hand",
-      "Name_4": "Nine_Billion_Names",
-      "Duration": 20,
-      "Assignment": {}
     }
   }
 }

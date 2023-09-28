@@ -25,19 +25,6 @@
     "order": 2,
     "color": "#ffcf70"
   },
-  "Assignment": {
-    "name": "Assignment",
-    "path": "Assignment.Assignment.Assignment",
-    "i18n": "Assignment.Assignment.name",
-    "stored": "StoredAssignment",
-    "attrs": {
-      "time": "2020-01-01 00:00:00",
-      "total": 0,
-      "value": 0
-    },
-    "order": 3,
-    "color": "#79dbc4"
-  },
   "BattlePassLevel": {
     "name": "BattlePassLevel",
     "path": "BattlePass.BattlePassStorage.BattlePassLevel",

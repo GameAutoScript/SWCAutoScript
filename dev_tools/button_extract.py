@@ -16,6 +16,13 @@ from module.logger import logger
 SHARE_SERVER = 'share'
 ASSET_SERVER = [SHARE_SERVER] + VALID_SERVER
 
+"""
+A tool to button_extract
+
+Usage:
+    python -m dev_tools.button_extract
+"""
+
 
 class AssetsImage:
     REGEX_ASSETS = re.compile(

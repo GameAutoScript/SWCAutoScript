@@ -233,16 +233,6 @@ class KeywordExtract:
         gen.write(output_file)
         self.clear_keywords()
 
-    def generate_assignment_keywords(self):
-        KeywordFromFile = namedtuple('KeywordFromFile', ('file', 'class_name', 'output_file'))
-        for keyword in (
-                KeywordFromFile('ExpeditionGroup.json', 'AssignmentGroup', './tasks/assignment/keywords/group.py'),
-                KeywordFromFile('ExpeditionData.json', 'AssignmentEntry', './tasks/assignment/keywords/entry.py')
-        ):
-            file = os.path.join(TextMap.DATA_FOLDER, 'ExcelOutput', keyword.file)
-            self.load_keywords(deep_get(data, 'Name.Hash') for data in read_file(file).values())
-            self.write_keywords(keyword_class=keyword.class_name, output_file=keyword.output_file)
-
     def generate_map_planes(self):
         planes = {
             'Herta': ['观景车厢', '主控舱段', '基座舱段', '收容舱段', '支援舱段'],
@@ -299,7 +289,6 @@ class KeywordExtract:
         self.load_keywords(['本日任务', '本周任务', '本期任务'])
         self.write_keywords(keyword_class='BattlePassMissionTab',
                             output_file='./tasks/battle_pass/keywords/mission_tab.py')
-        self.generate_assignment_keywords()
         self.generate_forgotten_hall_stages()
         self.generate_map_planes()
         self.generate_character_keywords()

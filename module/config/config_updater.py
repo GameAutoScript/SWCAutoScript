@@ -504,13 +504,6 @@ class ConfigGenerator:
         # update('template-docker', docker)
         # update('template-docker-cn', docker, cn)
 
-    def insert_assignment(self):
-        from tasks.assignment.keywords import AssignmentEntry
-        assignments = [entry.name for entry in AssignmentEntry.instances.values()]
-        for i in range(4):
-            deep_set(self.argument, keys=f'Assignment.Name_{i + 1}.option', value=assignments)
-            deep_set(self.args, keys=f'Assignment.Assignment.Name_{i + 1}.option', value=assignments)
-
     def insert_package(self):
         option = deep_get(self.argument, keys='Emulator.PackageName.option')
         option += list(VALID_PACKAGE.keys())
@@ -524,7 +517,6 @@ class ConfigGenerator:
         _ = self.menu
         _ = self.stored
         # _ = self.event
-        self.insert_assignment()
         self.insert_package()
         # self.insert_server()
         write_file(filepath_args(), self.args)

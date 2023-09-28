@@ -1,2 +1,0 @@
-import tasks.character.keywords.character_list as KEYWORD_CHARACTER_LIST
-from tasks.character.keywords.classes import CharacterList

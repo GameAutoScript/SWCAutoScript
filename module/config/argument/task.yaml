@@ -35,6 +35,3 @@ Daily:
     BattlePass:
       - Scheduler
       - BattlePassStorage
-    Assignment:
-      - Scheduler
-      - Assignment

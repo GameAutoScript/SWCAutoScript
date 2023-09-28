@@ -142,11 +142,11 @@ class ProcessManager:
             # Run alas
             if func == "alas":
                 from module.alas import AzurLaneAutoScript
-                from src import StarRailCopilot
+                from swc import SWCAutoScript
 
                 if e is not None:
                     AzurLaneAutoScript.stop_event = e
-                StarRailCopilot(config_name=config_name).loop()
+                SWCAutoScript(config_name=config_name).loop()
             else:
                 logger.critical(f"No function matched: {func}")
             logger.info(f"[{config_name}] exited. Reason: Finish\n")

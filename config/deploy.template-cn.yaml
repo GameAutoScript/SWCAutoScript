@@ -1,7 +1,7 @@
 Deploy:
   Git:
     # URL of AzurLaneAutoScript repository
-    # [Other] Use 'https://github.com/LmeSzinc/StarRailCopilot'
+    # [Other] Use 'https://github.com/GameAutoScript/SWCAutoScript'
     Repository: https://e.coding.net/llop18870/alas/AzurLaneAutoScript.git
     # Branch of Alas
     # [Developer] Use 'dev', 'app', etc, to try new features

@@ -564,21 +564,6 @@
           "not_supported"
         ]
       },
-      "Go_on_assignment_1_time": {
-        "type": "state",
-        "value": "achievable",
-        "option": [
-          "achievable",
-          "not_set",
-          "not_supported"
-        ],
-        "option_bold": [
-          "achievable"
-        ],
-        "option_light": [
-          "not_supported"
-        ]
-      },
       "Take_1_photo": {
         "type": "state",
         "value": "achievable",

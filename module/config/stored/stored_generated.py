@@ -1,5 +1,4 @@
 from module.config.stored.classes import (
-    StoredAssignment,
     StoredBase,
     StoredBattlePassLevel,
     StoredBattlePassTodayQuest,
@@ -25,4 +24,3 @@ class StoredGenerated:
     DailyQuest = StoredDaily("DailyQuest.DailyStorage.DailyQuest")
     BattlePassLevel = StoredBattlePassLevel("BattlePass.BattlePassStorage.BattlePassLevel")
     BattlePassTodayQuest = StoredBattlePassTodayQuest("BattlePass.BattlePassStorage.BattlePassTodayQuest")
-    Assignment = StoredAssignment("Assignment.Assignment.Assignment")

@@ -3,23 +3,23 @@ from module.base.button import Button, ButtonWrapper
 # This file was auto-generated, do not modify it manually. To generate:
 # ``` python -m dev_tools.button_extract ```
 
-LOGIN_CONFIRM = ButtonWrapper(
-    name='LOGIN_CONFIRM',
+LOGIN_CLOSE_TIP = ButtonWrapper(
+    name='LOGIN_CLOSE_TIP',
     share=Button(
-        file='./assets/share/login/LOGIN_CONFIRM.png',
-        area=(1188, 44, 1220, 74),
-        search=(1168, 24, 1240, 94),
-        color=(140, 124, 144),
-        button=(683, 327, 1143, 620),
+        file='./assets/share/login/LOGIN_CLOSE_TIP.png',
+        area=(1107, 646, 1150, 690),
+        search=(1087, 626, 1170, 710),
+        color=(180, 180, 180),
+        button=(1107, 646, 1150, 690),
     ),
 )
-USER_AGREEMENT_ACCEPT = ButtonWrapper(
-    name='USER_AGREEMENT_ACCEPT',
+LOGIN_SELECT_SERVER = ButtonWrapper(
+    name='LOGIN_SELECT_SERVER',
     cn=Button(
-        file='./assets/cn/login/USER_AGREEMENT_ACCEPT.png',
-        area=(751, 467, 791, 488),
-        search=(731, 447, 811, 508),
-        color=(196, 167, 111),
-        button=(678, 459, 867, 496),
+        file='./assets/cn/login/LOGIN_SELECT_SERVER.png',
+        area=(687, 573, 829, 605),
+        search=(667, 553, 849, 625),
+        color=(192, 208, 221),
+        button=(687, 573, 829, 605),
     ),
 )
