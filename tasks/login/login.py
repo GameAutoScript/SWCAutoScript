@@ -1,8 +1,9 @@
 from module.base.timer import Timer
 from module.logger import logger
+from module.base.button import ClickPos
 from tasks.base.page import page_main
 from tasks.base.ui import UI
-from tasks.login.assets.assets_login import LOGIN_CONFIRM, USER_AGREEMENT_ACCEPT
+from tasks.login.assets.assets_login import *
 
 
 class Login(UI):
@@ -36,9 +37,13 @@ class Login(UI):
                 break
 
             # Login
-            if self.appear_then_click(LOGIN_CONFIRM):
+            if self.appear_then_click(LOGIN_CLOSE_TIP):
                 continue
-            if self.appear_then_click(USER_AGREEMENT_ACCEPT):
+            if self.appear_then_click(GOOGLE_SURE):
+                continue
+            if self.appear_then_click(LGOIN_START):
+                continue
+            if self.appear_then_click(LOGIN_START_GAME):
                 continue
             # Additional
             if self.ui_additional():

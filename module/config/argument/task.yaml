@@ -32,6 +32,3 @@ Daily:
       - Scheduler
       - AchievableQuest
       - DailyStorage
-    BattlePass:
-      - Scheduler
-      - BattlePassStorage

@@ -135,11 +135,3 @@ DailyStorage:
   DailyQuest:
     stored: StoredDaily
 
-BattlePassStorage:
-  BattlePassLevel:
-    stored: StoredBattlePassLevel
-    order: 5
-    color: "#cbe45b"
-  BattlePassTodayQuest:
-    stored: StoredBattlePassTodayQuest
-

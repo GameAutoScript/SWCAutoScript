@@ -277,7 +277,6 @@ class AzurLaneConfig(ConfigUpdater, ManualConfig, GeneratedConfig, ConfigWatcher
                 if isinstance(next_run, datetime) and next_run > limit:
                     deep_set(self.data, keys=f"{task}.Scheduler.NextRun", value=now)
 
-        limit_next_run(['BattlePass'], limit=now + timedelta(days=31, seconds=-1))
         limit_next_run(self.args.keys(), limit=now + timedelta(hours=24, seconds=-1))
 
     def override(self, **kwargs):
@@ -496,16 +495,6 @@ class AzurLaneConfig(ConfigUpdater, ManualConfig, GeneratedConfig, ConfigWatcher
         if self.stored.DailyQuest.is_expired():
             logger.info('DailyQuest expired, call task to update')
             self.task_call('DailyQuest')
-            self.task_stop()
-
-    def update_battle_pass_quests(self):
-        """
-        Raises:
-            TaskEnd: Call task `BattlePass` and stop current task
-        """
-        if self.stored.BattlePassTodayQuest.is_expired():
-            logger.info('BattlePassTodayQuest expired, call task to update')
-            self.task_call('BattlePass')
             self.task_stop()
 
     @property

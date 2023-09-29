@@ -69,5 +69,10 @@ class Page:
 
 
 # Main page
-# page_main = Page(MAIN_GOTO_CHARACTER)
+page_main = Page(MAIN_CHECK)
 
+# MENU page
+page_main = Page(MENU_CHECK)
+
+# RUNE page
+page_main = Page(RUNE_CHECK)

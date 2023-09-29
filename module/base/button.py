@@ -246,3 +246,22 @@ def match_template(image, template, similarity=0.85):
     res = cv2.matchTemplate(image, template, cv2.TM_CCOEFF_NORMED)
     _, sim, _, point = cv2.minMaxLoc(res)
     return sim > similarity
+
+class ClickPos:
+    def __init__(self, pos, name='CLICK_POS'):
+        self.pos = pos
+        self.name = name
+
+    def __str__(self):
+        return self.name
+
+    __repr__ = __str__
+
+    def __eq__(self, other):
+        return str(self) == str(other)
+
+    def __hash__(self):
+        return hash(self.name)
+
+    def __bool__(self):
+        return True

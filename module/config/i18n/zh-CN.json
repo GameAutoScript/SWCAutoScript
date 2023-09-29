@@ -25,10 +25,6 @@
     "DailyQuest": {
       "name": "每日任务",
       "help": ""
-    },
-    "BattlePass": {
-      "name": "无名勋礼",
-      "help": ""
     }
   },
   "Scheduler": {
@@ -554,20 +550,6 @@
     },
     "DailyQuest": {
       "name": "每日任务",
-      "help": ""
-    }
-  },
-  "BattlePassStorage": {
-    "_info": {
-      "name": "BattlePassStorage._info.name",
-      "help": "BattlePassStorage._info.help"
-    },
-    "BattlePassLevel": {
-      "name": "无名勋礼",
-      "help": ""
-    },
-    "BattlePassTodayQuest": {
-      "name": "无名勋礼任务",
       "help": ""
     }
   },

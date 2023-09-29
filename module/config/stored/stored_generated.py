@@ -1,7 +1,5 @@
 from module.config.stored.classes import (
     StoredBase,
-    StoredBattlePassLevel,
-    StoredBattlePassTodayQuest,
     StoredCounter,
     StoredDaily,
     StoredDailyActivity,
@@ -22,5 +20,3 @@ class StoredGenerated:
     SimulatedUniverse = StoredSimulatedUniverse("Dungeon.DungeonStorage.SimulatedUniverse")
     DailyActivity = StoredDailyActivity("DailyQuest.DailyStorage.DailyActivity")
     DailyQuest = StoredDaily("DailyQuest.DailyStorage.DailyQuest")
-    BattlePassLevel = StoredBattlePassLevel("BattlePass.BattlePassStorage.BattlePassLevel")
-    BattlePassTodayQuest = StoredBattlePassTodayQuest("BattlePass.BattlePassStorage.BattlePassTodayQuest")

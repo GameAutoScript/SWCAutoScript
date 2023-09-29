@@ -4,11 +4,8 @@ from module.base.timer import Timer
 from module.exception import GameNotRunningError, GamePageUnknownError
 from module.logger import logger
 from module.ocr.ocr import Ocr
-from tasks.base.assets.assets_base_page import CLOSE
 from tasks.base.page import Page, page_main
 from tasks.base.popup import PopupHandler
-from tasks.combat.assets.assets_combat_finish import COMBAT_EXIT
-from tasks.combat.assets.assets_combat_prepare import COMBAT_PREPARE
 
 
 class UI(PopupHandler):
@@ -273,17 +270,7 @@ class UI(PopupHandler):
         Returns:
             If handled any popup.
         """
-        if self.handle_reward():
-            return True
-        if self.handle_battle_pass_notification():
-            return True
-        if self.handle_monthly_card_reward():
-            return True
-        if self.appear(COMBAT_PREPARE, interval=5):
-            logger.info(f'UI additional: {COMBAT_PREPARE} -> {CLOSE}')
-            self.device.click(CLOSE)
-        if self.appear_then_click(COMBAT_EXIT, interval=5):
-            return True
+        pass
 
         return False
 

@@ -23,6 +23,22 @@ class Control(Hermit, Minitouch, Scrcpy, MaaTouch):
             'Hermit': self.click_hermit,
             'MaaTouch': self.click_maatouch,
         }
+    def click_pos(self,click_pos):
+        """Method to click a pos.
+
+        Args:
+            
+        """
+        x,y = click_pos.pos
+        x, y = ensure_int(x, y)
+        logger.info(
+            'Click POS %s ' % (point2str(x, y))
+        )
+        method = self.click_methods.get(
+            self.config.Emulator_ControlMethod,
+            self.click_adb
+        )
+        method(x, y)
 
     def click(self, button, control_check=True):
         """Method to click a button.

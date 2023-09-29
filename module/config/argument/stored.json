@@ -25,19 +25,6 @@
     "order": 2,
     "color": "#ffcf70"
   },
-  "BattlePassLevel": {
-    "name": "BattlePassLevel",
-    "path": "BattlePass.BattlePassStorage.BattlePassLevel",
-    "i18n": "BattlePassStorage.BattlePassLevel.name",
-    "stored": "StoredBattlePassLevel",
-    "attrs": {
-      "time": "2020-01-01 00:00:00",
-      "total": 50,
-      "value": 0
-    },
-    "order": 5,
-    "color": "#cbe45b"
-  },
   "SimulatedUniverse": {
     "name": "SimulatedUniverse",
     "path": "Dungeon.DungeonStorage.SimulatedUniverse",
@@ -78,23 +65,6 @@
       "quest5": "",
       "quest6": "",
       "total": 6,
-      "value": 0
-    },
-    "order": 0,
-    "color": "#777777"
-  },
-  "BattlePassTodayQuest": {
-    "name": "BattlePassTodayQuest",
-    "path": "BattlePass.BattlePassStorage.BattlePassTodayQuest",
-    "i18n": "BattlePassStorage.BattlePassTodayQuest.name",
-    "stored": "StoredBattlePassTodayQuest",
-    "attrs": {
-      "time": "2020-01-01 00:00:00",
-      "quest1": "",
-      "quest2": "",
-      "quest3": "",
-      "quest4": "",
-      "total": 4,
       "value": 0
     },
     "order": 0,

@@ -123,6 +123,12 @@ class ModuleBase:
 
     appear = match_template
 
+    def click_pos(self,click_pos,interval=1):
+        if interval and not self.interval_is_reached(click_pos, interval=interval):
+            return False
+
+        self.device.click_pos(click_pos)
+
     def appear_then_click(self, button, interval=5, similarity=0.85):
         appear = self.appear(button, interval=interval, similarity=similarity)
         if appear:

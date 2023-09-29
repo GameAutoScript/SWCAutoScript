@@ -12,8 +12,7 @@
     "page": "setting",
     "tasks": [
       "Dungeon",
-      "DailyQuest",
-      "BattlePass"
+      "DailyQuest"
     ]
   }
 }
